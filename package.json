@@ -1,0 +1,12 @@
+{
+  "name": "configs",
+  "version": "1.0.0",
+  "description": "Base configs that can apply across various environments and projects and dev options/configs for code quality tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
