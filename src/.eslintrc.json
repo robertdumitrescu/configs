@@ -11,14 +11,14 @@
     "optimize-regex",
     "jsdoc"
   ],
-  "parser": "babel-eslint/lib/index.js",
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2020,
     "sourceType": "module"
   },
   "rules": {
     "jsdoc/check-alignment": 1,
-    "jsdoc/check-examples": 1,
+    "jsdoc/check-examples": 0,
     "jsdoc/check-indentation": 1,
     "jsdoc/check-param-names": 1,
     "jsdoc/check-syntax": 1,
@@ -79,6 +79,7 @@
       }
     ],
     "no-unused-vars": "warn",
+    "node/no-missing-import": "error",
     "no-unused-expressions": "warn",
     "no-unused-labels": "warn",
     "require-jsdoc": [
@@ -103,7 +104,9 @@
     ],
     "no-whitespace-before-property": "warn",
     "prefer-arrow-callback": "warn",
-    "object-curly-spacing": "warn",
+    "object-curly-spacing": ["warn", "always", { "arraysInObjects": false }],
+    "object-property-newline": ["warn", { "allowAllPropertiesOnSameLine": false }],
+    "object-curly-newline": ["warn", { "minProperties": 1 }],
     "no-useless-escape": "warn",
     "comma-dangle": [
       "warn",
